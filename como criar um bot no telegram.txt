@@ -1,0 +1,12 @@
+https://core.telegram.org/bots Link com tutorial do telegram
+
+Mas abaixo segue os link dos paso a paso que segui
+
+1º Fala com o botfather e use o comando /newbot
+2º De um nome ao bot
+3º De um nome ao bot com bot no final, ex: Mybot
+4º Copie o TOKEN do bot fornecido e altere no codigo do arquivo bot.py
+5º Envie uma msg ao seu bot
+6º Altere no script para printa a variavel msgs em ves de Mensagem na linha 28, Rode o script bot.py, e colete o ID que será printado
+7º Copite o ID e altere o valora da variavel chat_id
+8º Execute set bot e seja feliz !!!
