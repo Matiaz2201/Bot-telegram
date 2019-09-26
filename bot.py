@@ -23,9 +23,11 @@ class bot:
             response = requests.get(url) # Coletando msg atraves de um GET na API do telegram
 
             msgs = json.loads(response.text)['result'] # Transformando o texto do reponse em JSON e pegando o result do GET
-            mensagem = msgs[len(msgs)-1]['message']['text'] # Coletando o texto da ultima msg enviada
 
-            print(mensagem)
+            mensagem = msgs[len(msgs)-1]['message']['text'] # Coletando o texto da ultima msg enviada
+            chat_id = msgs[len(msgs)-1]['message']['chat']['id'] # Coletando o ID do chat de quem enviou a msg
+
+            print(mensagem) # Printando a mensagem
             if id_msg == 0:
                 msg = 'Bot iniciado'
                 url = 'https://api.telegram.org/bot{}/sendMessage'.format(TOKEN)# Preparando URL com token
